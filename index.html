@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nnaemeka Destine Dike — Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <!-- <div class="nav__logo">AM<span class="dot">.</span></div> -->
+    <div class="nav__logo">
+      <img src="logo.png" alt="Nnaemeka Destine Dike Logo" class="nav__logo-img"/>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="resume.pdf" class="btn btn--outline" download>Resume ↓</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="resume.pdf" download>Resume ↓</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="grid-lines"></div>
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__tag">
+        <span class="pulse"></span>
+        Open to opportunities
+      </div>
+      <h1 class="hero__title">
+        Turning messy<br/>
+        data into<br/>
+        <em>clear stories.</em>
+      </h1>
+      <p class="hero__sub">
+        I'm <strong>Nnaemeka Destine Dike</strong> — a Data Analyst who lives at the intersection of statistics, storytelling, and design.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Let's Talk →</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">15+</span>
+          <span class="stat__label">Projects</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">5+ yrs</span>
+          <span class="stat__label">Experience</span>
+        </div>
+        <div class="stat__divider"></div>
+        <div class="stat">
+          <span class="stat__num">Top 8%</span>
+          <span class="stat__label">Kaggle</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <!-- <div class="chart-card">
+        <div class="chart-card__header">
+          <span class="chart-card__title">Revenue Analysis Q4</span>
+          <span class="chart-card__badge">Live</span>
+        </div>
+        <div class="bars">
+          <div class="bar-group">
+            <div class="bar bar--a" style="--h:55%"></div>
+            <div class="bar bar--b" style="--h:70%"></div>
+            <span class="bar-label">Jan</span>
+          </div>
+          <div class="bar-group">
+            <div class="bar bar--a" style="--h:65%"></div>
+            <div class="bar bar--b" style="--h:85%"></div>
+            <span class="bar-label">Feb</span>
+          </div>
+          <div class="bar-group">
+            <div class="bar bar--a" style="--h:45%"></div>
+            <div class="bar bar--b" style="--h:60%"></div>
+            <span class="bar-label">Mar</span>
+          </div>
+          <div class="bar-group">
+            <div class="bar bar--a" style="--h:80%"></div>
+            <div class="bar bar--b" style="--h:95%"></div>
+            <span class="bar-label">Apr</span>
+          </div>
+          <div class="bar-group">
+            <div class="bar bar--a" style="--h:70%"></div>
+            <div class="bar bar--b" style="--h:88%"></div>
+            <span class="bar-label">May</span>
+          </div>
+          <div class="bar-group">
+            <div class="bar bar--a" style="--h:90%"></div>
+            <div class="bar bar--b" style="--h:100%"></div>
+            <span class="bar-label">Jun</span>
+          </div>
+        </div>
+        <div class="chart-legend">
+          <span class="legend-dot legend-dot--a"></span> 2023
+          <span class="legend-dot legend-dot--b"></span> 2024
+        </div>
+      </div> -->
+      <!-- <img src="Video.gif" alt="Data Analytics Dashboard Screenshot" class="hero__image"/> -->
+
+      <div class="metric-card metric-card--1">
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <span>+24% Growth</span>
+      </div>
+      <div class="metric-card metric-card--2">
+        <i class="fa-solid fa-database"></i>
+        <span>2.4M Rows</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrap">
+          <div class="about__image-bg"></div>
+          <!-- <div class="about__image-placeholder">
+            <i class="fa-solid fa-user"></i>
+          </div> -->
+          <img src="ME.jpg" alt="Nnaemeka Destine Dike Photo" class="about__image"/>
+          <div class="about__image-tag">
+            <i class="fa-solid fa-location-dot"></i> Port-Harcourt, Nigeria
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section__eyebrow">About Me</p>
+          <h2 class="section__title">I turn raw data<br/><em>into valuable insights.</em></h2>
+          <p class="about__para">
+            With 5+ years of experience in data analytics, I specialize in transforming complex datasets into compelling narratives that drive business decisions. I've worked with startups and enterprise teams across fintech, e-commerce, and healthcare.
+          </p>
+          <p class="about__para">
+            My toolkit includes Excel, Python, SQL, Power BI, and Tableau — but my real superpower is asking the right questions and critical and constructive researchbefore touching a single line of code.
+          </p>
+          <div class="about__highlights">
+            <div class="highlight">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <strong>B.Tech. Chemistry</strong>
+                <span>Federal University of Technology,Owerri, 2020</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <i class="fa-solid fa-certificate"></i>
+              <div>
+                <strong>Google Data Analytics</strong>
+                <span>Professional Certificate</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <i class="fa-solid fa-trophy"></i>
+              <div>
+                <strong>Data Expert</strong>
+                <span>Top 8% globally</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Featured Work</p>
+        <h2 class="section__title">Projects that<br/><em>made impacts.</em></h2>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card project-card--featured">
+          <div class="project-card__visual">
+            <!-- <div class="viz viz--line">
+              <svg viewBox="0 0 300 120" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,90 C40,80 60,30 100,40 C140,50 160,20 200,15 C240,10 270,25 300,10" stroke="var(--accent)" stroke-width="2.5" fill="none" class="chart-path"/>
+                <path d="M0,90 C40,80 60,30 100,40 C140,50 160,20 200,15 C240,10 270,25 300,10 L300,120 L0,120 Z" fill="url(#grad1)" class="chart-fill"/>
+              </svg>
+            </div> -->
+            <img src="Sales.png" alt="Sales Performance Analysis Dashboard Screenshot" class="project-card__image"/>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Excel</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Pivot Table</span>
+            </div>
+            <h3>Sales Performance Analysis (2023 vs 2024)</h3>
+            <p>This project presents a comprehensive Sales Performance Analysis comparing business outcomes between 2023 and 2024. The analysis evaluates revenue growth, profitability, cost efficiency, regional performance, and product-level contributions using an interactive dashboard.
+
+             The objective is to demonstrate how data-driven insights can support strategic decision-making, operational efficiency, and sustainable business growth..</p>
+            <div class="project-card__metrics">
+              <div class="pm"><span>94%</span> Accuracy</div>
+              <div class="pm"><span>30%</span> YOY Growth</div>
+              <div class="pm"><span>899</span> Units Sold</div>
+            </div>
+            <!-- <div class="project-card__links">
+              <a href="#" class="btn btn--sm btn--outline"><i class="fa-brands fa-github"></i> View Project</a>
+            </div> -->
+            <div class="project-card__links">
+              <a href="https://github.com/Destinetheanalyst/Sales-Performance-Analysis-2023-vs-2024-" class="btn btn--sm btn--outline" target="_blank"><i class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--sm">
+            <img src="SUMMARY_dashboard.png" alt="Sales Performance Analysis Dashboard Screenshot" class="project-card__image"/>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas, Numpy</span>
+              <span class="tag">Matplotlib, Seaborn</span>
+            </div>
+            <h3>Smart-Logistics-Analytics-End-to-End-Data-Analysis-Prediction</h3>
+            <p>This project presents a comprehensive analysis of a smart logistics dataset, combining descriptive analytics and machine learning to uncover operational inefficiencies and predict shipment delays.
+
+            The analysis reveals key performance bottlenecks across logistics operations, focusing on delay patterns, traffic conditions, asset performance, and environmental factors..</p>
+            <!-- <div class="project-card__links">
+              <a href="#" class="btn btn--sm">View Project →</a>
+              <a href="#" class="btn btn--sm btn--outline"><i class="fa-brands fa-github"></i> Code</a>
+            </div> -->
+            <div class="project-card__links">
+              <a href="https://github.com/Destinetheanalyst/Smart-Logistics-Analytics-End-to-End-Data-Analysis-Prediction" class="btn btn--sm btn--outline" target="_blank"><i class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--sm">
+            <img src="Petrol Analysis.png" alt="Petrol Market Analytics Dashboard Screenshot" class="project-card__image"/>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Seaborn</span>
+            </div>
+            <h3> Global Petrol Market Analytics</h3>
+            <p>This project explores global petrol pricing and oil consumption patterns across 181 countries using Python-based data analytics techniques..</p>
+            <!-- <div class="project-card__links">
+              <a href="#" class="btn btn--sm">View Notebook →</a>
+              <a href="#" class="btn btn--sm btn--outline"><i class="fa-brands fa-kaggle"></i> Kaggle</a>
+            </div> -->
+            <div class="project-card__links">
+              <a href="https://github.com/Destinetheanalyst/Global-Petrol-Market-Analysis-" class="btn btn--sm btn--outline" target="_blank"><i class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--sm">
+            <img src="Fleet Dashboard.png" alt="Fleet Management Analytics Dashboard Screenshot" class="project-card__image"/>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">ToolTips</span>
+              <span class="tag">Power Query</span>
+            </div>
+            <h3>Fleet-Management-Analytics-Dashboard-Power-BI</h3>
+            <p>The Fleet Management Analytics Dashboard provides a consolidated view of fleet operations, enabling organizations to monitor vehicle usage, fuel consumption, maintenance expenditure, and driver performance through interactive Power BI visuals.
+
+            Designed for operational leaders and analysts, the dashboard improves decision-making by identifying high-cost patterns, detecting inefficiencies, and uncovering optimization opportunities across the fleet lifecycle..</p>
+            <!-- <div class="project-card__links">
+              <a href="#" class="btn btn--sm">View Dashboard →</a>
+              <a href="#" class="btn btn--sm btn--outline"><i class="fa-solid fa-file"></i> Case Study</a>
+            </div> -->
+            <div class="project-card__links">
+              <a href="https://github.com/Destinetheanalyst/Fleet-Management-Analytics-Dashboard-Power-BI-" class="btn btn--sm btn--outline" target="_blank"><i class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__visual project-card__visual--sm">
+            <img src="Optimizing Sales.png" alt="Optimizing Sales Performance Analysis Dashboard Screenshot" class="project-card__image"/>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">SQL</span>
+              <span class="tag">Pivot Tables</span>
+              <span class="tag">Excel</span>
+              <span class="tag">DAX</span>
+            </div>
+            <h3>Optimizing E-Commerce Sales through Analytics</h3>
+            <p>To leverage data analytics techniques to uncover sales trends, customer behavior, and product performance in order to develop actionable insights that drive revenue growth, improve customer experience, and enhance overall e-commerce sales efficiency.</p>
+            <!-- <div class="project-card__links">
+              <a href="#" class="btn btn--sm">View Dashboard →</a>
+              <a href="#" class="btn btn--sm btn--outline"><i class="fa-solid fa-file"></i> Case Study</a>
+            </div> -->
+            <div class="project-card__links">
+              <a href="https://github.com/Destinetheanalyst/Optimizing-Sales-Performance-Through-Data-Analytics" class="btn btn--sm btn--outline" target="_blank"><i class="fa-brands fa-github"></i> View Project</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="project-card__links" style="max-width: 300px; margin: 40px auto 0;">
+        <a href="https://github.com/Destinetheanalyst" class="btn btn--primary btn--full" target="_blank"><i class="fa-brands fa-github"></i> View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Expertise</p>
+        <h2 class="section__title">Tools of my<br/><em>trade.</em></h2>
+      </div>
+      <div class="skills__grid">
+        <div class="skill-category">
+          <h4><i class="fa-solid fa-code"></i> Languages</h4>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item__info"><span>Python</span><span>92%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:92%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>SQL</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>R</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:70%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fa-solid fa-chart-bar"></i> Visualization</h4>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item__info"><span>Power BI</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>Tableau</span><span>82%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>Plotly / Dash</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:78%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fa-solid fa-robot"></i> Machine Learning</h4>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item__info"><span>Scikit-learn</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>XGBoost / LightGBM</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>Time Series (Prophet)</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:75%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fa-solid fa-cloud"></i> Data & Cloud</h4>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-item__info"><span>PostgreSQL / MySQL</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>BigQuery / Snowflake</span><span>72%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:72%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-item__info"><span>dbt / Airflow</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-bar__fill" style="--w:65%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-strip">
+        <span class="tools-strip__label">Also familiar with</span>
+        <div class="tools-strip__pills">
+          <span>Excel / Sheets</span><span>Git & GitHub</span><span>Jupyter</span>
+          <span>VS Code</span><span>Pandas</span><span>NumPy</span>
+          <span>Matplotlib</span><span>Seaborn</span><span>Docker</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section__eyebrow">Get In Touch</p>
+          <h2 class="section__title">Let's work<br/><em>together.</em></h2>
+          <p class="contact__para">Whether you have a data challenge, a project idea, or just want to connect — my inbox is always open.</p>
+          <div class="contact__socials">
+            <a href="mailto:destine.dike234@gmail.com" class="social-link">
+              <i class="fa-solid fa-envelope"></i>
+              <span>destine.dike234@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nnaemekadestinedike/" class="social-link" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>linkedin.com/in/nnaemekadestinedike</span>
+            </a>
+            <a href="https://github.com/Destinetheanalyst" class="social-link" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <span>github.com/Destinetheanalyst</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your full name" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Thanks! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+       <div class="nav__logo">
+      <img src="logo.png" alt="Nnaemeka Destine Dike Logo" class="nav__logo-img"/>
+    </div>
+        <span>© Nnaemeka Destine Dike. Built with HTML & CSS.</span>
+        <div class="footer__links">
+          <a href="https://github.com/Destinetheanalyst" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nnaemekadestinedike/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
